@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core>=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "bank_marketing"
+version = "0.1.0"
+description = "Regresión logística reproducible para Bank Marketing"
+authors = [{name = "Leonardo Peraza Alavez"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.12,<3.13"
+
+[tool.ruff]
+line-length = 79
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["bank_marketing"]

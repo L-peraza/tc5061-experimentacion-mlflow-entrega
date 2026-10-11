@@ -1,0 +1,94 @@
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo
+Run ID: 5facb48bcdfd41dfbcf657363ce44703
+{
+  "val_accuracy": 0.754257907542579,
+  "val_precision": 0.2668269230769231,
+  "val_recall": 0.6294896030245747,
+  "val_f1": 0.37478897017445134,
+  "val_roc_auc": 0.7699025177008081
+}
+2026/10/10 22:07:02 INFO mlflow.projects.utils: === Created directory /tmp/tmpvkxbveo5 for downloading remote URIs passed to arguments of type 'path' ===
+2026/10/10 22:07:02 INFO mlflow.projects.backend.local: === Running command 'python train.py --c 1.0 --class-weight balanced --fit-intercept true --seed 42 --modelo logistica --run-name R1_base' in run with ID '5facb48bcdfd41dfbcf657363ce44703' ===
+2026/10/10 22:07:04 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+2026/10/10 22:07:04 INFO mlflow.projects: === Run (ID '5facb48bcdfd41dfbcf657363ce44703') succeeded ===
+
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P c=0.01 -P run_name=R2_C_001
+Run ID: c962850dc36f42b38f5d5aecacd4de39
+{
+  "val_accuracy": 0.7309223623092236,
+  "val_precision": 0.2518946228798268,
+  "val_recall": 0.6597353497164461,
+  "val_f1": 0.36458605379994774,
+  "val_roc_auc": 0.7712790893696655
+}
+2026/10/10 22:07:06 INFO mlflow.projects.utils: === Created directory /tmp/tmpa5mq3d8r for downloading remote URIs passed to arguments of type 'path' ===
+2026/10/10 22:07:06 INFO mlflow.projects.backend.local: === Running command 'python train.py --c 0.01 --class-weight balanced --fit-intercept true --seed 42 --modelo logistica --run-name R2_C_001' in run with ID 'c962850dc36f42b38f5d5aecacd4de39' ===
+2026/10/10 22:07:08 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+2026/10/10 22:07:08 INFO mlflow.projects: === Run (ID 'c962850dc36f42b38f5d5aecacd4de39') succeeded ===
+
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P c=100 -P run_name=R3_C_100
+Run ID: 39da57b46f66473f8912e21e6f61ba76
+{
+  "val_accuracy": 0.7548108825481088,
+  "val_precision": 0.26717557251908397,
+  "val_recall": 0.6285444234404537,
+  "val_f1": 0.3749647589512264,
+  "val_roc_auc": 0.7698120721594417
+}
+2026/10/10 22:07:10 INFO mlflow.projects.utils: === Created directory /tmp/tmplichfn42 for downloading remote URIs passed to arguments of type 'path' ===
+2026/10/10 22:07:10 INFO mlflow.projects.backend.local: === Running command 'python train.py --c 100 --class-weight balanced --fit-intercept true --seed 42 --modelo logistica --run-name R3_C_100' in run with ID '39da57b46f66473f8912e21e6f61ba76' ===
+2026/10/10 22:07:12 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+2026/10/10 22:07:12 INFO mlflow.projects: === Run (ID '39da57b46f66473f8912e21e6f61ba76') succeeded ===
+
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P class_weight=none -P run_name=R4_sin_pesos
+Run ID: 8479d598b54248ec9041b80b58b50f87
+{
+  "val_accuracy": 0.8944923689449237,
+  "val_precision": 0.6768707482993197,
+  "val_recall": 0.1880907372400756,
+  "val_f1": 0.2943786982248521,
+  "val_roc_auc": 0.7692978111231915
+}
+2026/10/10 22:07:14 INFO mlflow.projects.utils: === Created directory /tmp/tmps0feecud for downloading remote URIs passed to arguments of type 'path' ===
+2026/10/10 22:07:14 INFO mlflow.projects.backend.local: === Running command 'python train.py --c 1.0 --class-weight none --fit-intercept true --seed 42 --modelo logistica --run-name R4_sin_pesos' in run with ID '8479d598b54248ec9041b80b58b50f87' ===
+2026/10/10 22:07:16 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+2026/10/10 22:07:16 INFO mlflow.projects: === Run (ID '8479d598b54248ec9041b80b58b50f87') succeeded ===
+
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P fit_intercept=false -P run_name=R5_sin_intercepto
+Run ID: 518da872cbf447bbac7b213e79e36119
+{
+  "val_accuracy": 0.754368502543685,
+  "val_precision": 0.26693386773547095,
+  "val_recall": 0.6294896030245747,
+  "val_f1": 0.3748944553898114,
+  "val_roc_auc": 0.7698894954369988
+}
+2026/10/10 22:07:18 INFO mlflow.projects.utils: === Created directory /tmp/tmprzsidukl for downloading remote URIs passed to arguments of type 'path' ===
+2026/10/10 22:07:18 INFO mlflow.projects.backend.local: === Running command 'python train.py --c 1.0 --class-weight balanced --fit-intercept false --seed 42 --modelo logistica --run-name R5_sin_intercepto' in run with ID '518da872cbf447bbac7b213e79e36119' ===
+2026/10/10 22:07:20 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+2026/10/10 22:07:20 INFO mlflow.projects: === Run (ID '518da872cbf447bbac7b213e79e36119') succeeded ===
+
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P modelo=dummy -P run_name=R6_mayoritaria
+Run ID: 7ee762edb9784701a20f43f2601b2317
+{
+  "val_accuracy": 0.8829904888299049,
+  "val_precision": 0.0,
+  "val_recall": 0.0,
+  "val_f1": 0.0,
+  "val_roc_auc": 0.5
+}
+2026/10/10 22:07:22 INFO mlflow.projects.utils: === Created directory /tmp/tmp9prcvfem for downloading remote URIs passed to arguments of type 'path' ===
+2026/10/10 22:07:22 INFO mlflow.projects.backend.local: === Running command 'python train.py --c 1.0 --class-weight balanced --fit-intercept true --seed 42 --modelo dummy --run-name R6_mayoritaria' in run with ID '7ee762edb9784701a20f43f2601b2317' ===
+2026/10/10 22:07:24 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+2026/10/10 22:07:24 INFO mlflow.projects: === Run (ID '7ee762edb9784701a20f43f2601b2317') succeeded ===
+
+python train.py
+Run ID: 68120f2c69cf4365bc66b1df88a648e5
+{
+  "val_accuracy": 0.754257907542579,
+  "val_precision": 0.2668269230769231,
+  "val_recall": 0.6294896030245747,
+  "val_f1": 0.37478897017445134,
+  "val_roc_auc": 0.7699025177008081
+}
+2026/10/10 22:07:27 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html

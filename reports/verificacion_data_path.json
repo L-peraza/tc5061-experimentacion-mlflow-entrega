@@ -1,0 +1,51 @@
+{
+  "fecha": "2026-10-10",
+  "licencia": "MIT",
+  "ruta_personalizada_con_espacios": true,
+  "ruta_inexistente_rechazada_sin_descarga": true,
+  "tracking": "Base SQLite de verificaci\u00f3n independiente de las siete corridas originales.",
+  "corridas": [
+    {
+      "corrida": "Verificacion_ruta_mlproject",
+      "estado": "FINISHED",
+      "metricas": {
+        "val_accuracy": 0.754257907542579,
+        "val_precision": 0.2668269230769231,
+        "val_recall": 0.6294896030245747,
+        "val_f1": 0.37478897017445134,
+        "val_roc_auc": 0.7699025177008081
+      },
+      "diferencia_maxima_frente_a_R1": 0.0,
+      "ruta_registrada_correcta": true,
+      "licencia_en_artefactos": true
+    },
+    {
+      "corrida": "Verificacion_ruta_predeterminada",
+      "estado": "FINISHED",
+      "metricas": {
+        "val_accuracy": 0.754257907542579,
+        "val_precision": 0.2668269230769231,
+        "val_recall": 0.6294896030245747,
+        "val_f1": 0.37478897017445134,
+        "val_roc_auc": 0.7699025177008081
+      },
+      "diferencia_maxima_frente_a_R1": 0.0,
+      "ruta_registrada_correcta": true,
+      "licencia_en_artefactos": true
+    },
+    {
+      "corrida": "Verificacion_ruta_script",
+      "estado": "FINISHED",
+      "metricas": {
+        "val_accuracy": 0.754257907542579,
+        "val_precision": 0.2668269230769231,
+        "val_recall": 0.6294896030245747,
+        "val_f1": 0.37478897017445134,
+        "val_roc_auc": 0.7699025177008081
+      },
+      "diferencia_maxima_frente_a_R1": 0.0,
+      "ruta_registrada_correcta": true,
+      "licencia_en_artefactos": true
+    }
+  ]
+}

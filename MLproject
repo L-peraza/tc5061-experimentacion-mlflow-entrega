@@ -1,0 +1,19 @@
+name: TC5061_BankMarketing_Cookiecutter
+
+python_env: python_env.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_path: {type: string, default: data/raw/bank-full.csv}
+      c: {type: float, default: 1.0}
+      class_weight: {type: string, default: balanced}
+      fit_intercept: {type: string, default: "true"}
+      seed: {type: int, default: 42}
+      modelo: {type: string, default: logistica}
+      run_name: {type: string, default: R1_base}
+    command: >-
+      python train.py --data-path {data_path}
+      --c {c} --class-weight {class_weight}
+      --fit-intercept {fit_intercept} --seed {seed}
+      --modelo {modelo} --run-name {run_name}

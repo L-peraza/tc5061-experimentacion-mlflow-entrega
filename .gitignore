@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+.ruff_cache/
+.env
+mlflow.db*
+mlruns/
+data/**/*
+!data/**/
+!data/**/.gitkeep
+models/*
+!models/.gitkeep

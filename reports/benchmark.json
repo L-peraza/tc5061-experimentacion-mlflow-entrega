@@ -1,0 +1,13 @@
+{
+  "filas": 45211,
+  "columnas": 3,
+  "repeticiones": 5,
+  "ejecuciones_por_repeticion": 3,
+  "segundos_mediana": {
+    "listas": 0.03871385966673794,
+    "vectorizado": 0.0014756109999325417
+  },
+  "razon_listas_sobre_vectorizado": 26.235816667473856,
+  "salidas_equivalentes": true,
+  "alcance": "Solo limpieza de tres columnas; depende del equipo."
+}

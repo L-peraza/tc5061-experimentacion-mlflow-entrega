@@ -1,0 +1,10 @@
+{
+  "plantilla": "https://github.com/drivendataorg/cookiecutter-data-science",
+  "version": "v2.3.0",
+  "commit_plantilla": "0f6b163cdbe3918a2c65ab57ad9fefda93976d9e",
+  "generador": "cookiecutter-data-science==2.3.0",
+  "motor": "cookiecutter==2.7.1",
+  "python": "3.12.14",
+  "modulo": "bank_marketing",
+  "adaptacion": "Se conserva la estructura oficial y se reemplaza el contenido de ejemplo por el flujo del curso."
+}

@@ -1,0 +1,11 @@
+test_exige_fit_antes_de_transformar (test_flujo.TestBankCleaner.test_exige_fit_antes_de_transformar) ... ok
+test_limpia_sin_modificar_la_entrada (test_flujo.TestBankCleaner.test_limpia_sin_modificar_la_entrada) ... ok
+test_rechaza_esquema_distinto (test_flujo.TestBankCleaner.test_rechaza_esquema_distinto) ... ok
+test_imputacion_solo_con_entrenamiento (test_flujo.TestDatosYModelo.test_imputacion_solo_con_entrenamiento) ... ok
+test_metricas_iguales_a_la_version_anterior (test_flujo.TestDatosYModelo.test_metricas_iguales_a_la_version_anterior) ... ok
+test_particion_fija_y_separada (test_flujo.TestDatosYModelo.test_particion_fija_y_separada) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.043s
+
+OK

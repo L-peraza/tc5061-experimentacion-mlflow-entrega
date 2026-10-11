@@ -1,0 +1,8 @@
+export MLFLOW_TRACKING_URI=sqlite:///mlflow.db
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P c=0.01 -P run_name=R2_C_001
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P c=100 -P run_name=R3_C_100
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P class_weight=none -P run_name=R4_sin_pesos
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P fit_intercept=false -P run_name=R5_sin_intercepto
+mlflow run . --env-manager local --experiment-name TC5061_BankMarketing_Cookiecutter_PerazaLeonardo -P modelo=dummy -P run_name=R6_mayoritaria
+python train.py
